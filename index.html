@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator Exercise</title>
+        <script src='script.js'></script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="3">
+                    <input type="text" id="output" value = "" disabled>
+                </td>
+                <td>
+                    <span id = "currentOperation"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="getInput('1')">1</button>
+                </td>
+                <td>
+                    <button type="button" onclick="getInput('2')">2</button>
+                </td>
+                <td>
+                    <button type="button" onclick="getInput('3')" colspan="2">3</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="getInput('4')">4</button>
+                </td>
+                <td>
+                    <button type="button" onclick="getInput('5')">5</button>
+                </td>
+                <td>
+                    <button type="button" onclick="getInput('6')" colspan="2">6</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="getInput('7')">7</button>
+                </td>
+                <td>
+                    <button type="button" onclick="getInput('8')">8</button>
+                </td>
+                <td>
+                    <button type="button" onclick="getInput('9')" colspan="2">9</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="getInput('0')">0</button>
+                </td>
+                <td>
+                    <button type="button" onclick="getInput('+')">+</button>
+                </td>
+                <td>
+                    <button type="button" onclick="getInput('-')" colspan="2">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="getInput('/')">/</button>
+                </td>
+                <td>
+                    <button type="button" onclick="getInput('*')">*</button>
+                </td>
+                <td>
+                    <button type="button" onclick="getInput('%')" colspan="2">%</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                    <button type="button" onclick ="solve()">=</button>
+                </td>
+            </tr>
+        </table>
+        <p id="history">History: <br/></p>
+    </body>
+</html>
